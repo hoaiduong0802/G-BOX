@@ -1,0 +1,41 @@
+.footer {
+  height: 250px;
+  background-color: $yellow-cl;
+  padding-top: 30px;
+  .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    p {
+      width: 50%;
+    }
+    form {
+      width: 50%;
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: space-between;
+      .item {
+        display: flex;
+        flex-direction: column;
+        padding-bottom: 10px;
+        span {
+          @include text(12px, Pxm Rg, 20px, $black-cl, none);
+        }
+        input {
+          background-color: $yellow-cl;
+          border: none;
+          border-bottom: 2px solid $black-cl;
+          &:focus-visible {
+            outline: none;
+          }
+        }
+      }
+      a {
+        padding: 10px 25px;
+        @include text(12px, Pxm B, 20px, $white-cl, uppercase);
+        background-color: #231f20;
+      }
+    }
+  }
+}

@@ -1,5 +1,5 @@
 .footer {
-  height: 250px;
+  height: 400px;
   background-color: $yellow-cl;
   padding-top: 30px;
   .container {
@@ -36,6 +36,21 @@
         @include text(12px, Pxm B, 20px, $white-cl, uppercase);
         background-color: #231f20;
       }
+    }
+  }
+  .backtop {
+    flex-direction: column;
+    padding-top: 60px;
+    a {
+      @include size(25px, 25px);
+      img {
+        @include size(100%);
+      }
+    }
+    span {
+      padding-top: 20px;
+      @include text(10px, Pxm Ext, normal, $black-cl, uppercase);
+      letter-spacing: 3px;
     }
   }
 }

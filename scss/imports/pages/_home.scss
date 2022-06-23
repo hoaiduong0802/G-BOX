@@ -62,7 +62,7 @@
     }
   }
   &__item {
-    &-all {
+    &.--all {
       display: none;
       &.active {
         display: grid;
@@ -79,7 +79,7 @@
         }
       }
     }
-    &-film {
+    &.--film {
       display: none;
       &.active {
         display: grid;
@@ -96,7 +96,7 @@
         }
       }
     }
-    &-image {
+    &.--image {
       display: none;
       &.active {
         display: grid;
